@@ -71,7 +71,7 @@ for(let n=0;n<6;n++){
  box(c,2.92,3.05,13.2,coachBlue,0,1.95,0);box(c,2.96,.18,13.2,coachLight,0,2.8,0);box(c,2.98,.14,13.2,coachLight,0,1.15,0);
  box(c,2.95,.16,13.15,coachDark,0,.38,0);
  // rounded-looking roof and end caps
- const roof=new THREE.Mesh(new THREE.CylinderGeometry(1.48,1.48,13.15,24,1,false,0,Math.PI),coachLight);roof.rotation.z=Math.PI/2;roof.position.set(0,3.48,0);c.add(roof);
+ const roof=new THREE.Mesh(new THREE.CylinderGeometry(1.48,1.48,13.15,24,1,false,0,Math.PI),coachLight);roof.rotation.x=Math.PI/2;roof.position.set(0,3.48,0);c.add(roof);
  for(const side of [-1,1]){
   const sx=side*1.49;
   for(let w=0;w<10;w++){const z=-5.25+w*1.16;if(w===4||w===5)continue;box(c,.045,.78,.82,coachDark,sx,2.25,z);box(c,.055,.68,.72,glass,sx+side*.03,2.27,z);box(c,.06,.055,.76,steel,sx+side*.04,2.27,z);}
